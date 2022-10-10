@@ -1,0 +1,6 @@
+.button:hover {
+    -fx-background-radius: 10;
+}
+.button:focused {
+    -fx-background-radius: 10;
+}

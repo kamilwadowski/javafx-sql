@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d1e0e0;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javasqlbykamilwadowski2.controllers.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="255.0" style="-fx-background-color: #a3c2c2;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="150.0" prefHeight="47.0" prefWidth="257.0" text="Log into the database" textFill="#574d4d">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="142.0" layoutX="112.0" layoutY="310.0" startX="-112.0" stroke="#f0f5f5" />
+            <Label alignment="CENTER" layoutY="345.0" prefHeight="47.0" prefWidth="260.0" text="Kamil Wadowski" textFill="#574d4d">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="245.0" prefHeight="47.0" prefWidth="260.0" text="wadowski@mail.de" textFill="#574d4d">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="261.0" prefHeight="400.0" prefWidth="340.0" style="-fx-background-color: #f0f5f5;">
+         <children>
+            <ImageView fitHeight="91.0" fitWidth="107.0" layoutX="125.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/lock.png" />
+               </image>
+            </ImageView>
+            <Line endX="233.0" layoutX="107.0" layoutY="134.0" startX="-107.0" stroke="#a3c2c2" />
+            <Label alignment="CENTER" layoutY="149.0" prefHeight="35.0" prefWidth="79.0" text="Login" textFill="#574d4d">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutX="79.0" layoutY="154.0" prefHeight="25.0" prefWidth="206.0" promptText="Username" />
+            <Label alignment="CENTER" layoutY="203.0" prefHeight="35.0" prefWidth="79.0" text="Password" textFill="#574d4d">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pf_password" layoutX="79.0" layoutY="208.0" prefHeight="25.0" prefWidth="206.0" promptText="Password" />
+            <Button fx:id="bt_login" layoutX="79.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: #a3c2c2; -fx-cursor: hand;" stylesheets="@../css/application.css" text="Login" textFill="#574d4d">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt_register" layoutX="79.0" layoutY="305.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: #a3c2c2; -fx-cursor: hand;" stylesheets="@../css/application.css" text="Register" textFill="#574d4d">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt_exit" layoutX="305.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: #a3c2c2; -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bt_minimise" layoutX="262.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: #a3c2c2; -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/minimise.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

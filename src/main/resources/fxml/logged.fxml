@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="526.0" style="-fx-background-color: #f0f5f5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javasqlbykamilwadowski2.controllers.LoggedController">
+   <top>
+      <AnchorPane prefHeight="69.0" prefWidth="526.0" style="-fx-background-color: #a3c2c2;"
+                  BorderPane.alignment="CENTER">
+         <Label fx:id="lb_welcome" alignment="CENTER" layoutX="4.0" layoutY="4.0" prefHeight="56.0" prefWidth="454.0"
+                text="Welcome!" textFill="#574d4d">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="28.0"/>
+            </font>
+         </Label>
+         <Button fx:id="bt_exit" layoutX="489.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0"
+                 prefWidth="29.0" style="-fx-background-color: #f0f5f5; -fx-cursor: hand;" AnchorPane.topAnchor="7.0">
+            <graphic>
+               <ImageView fitHeight="26.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../images/exit2.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="bt_minimise" layoutX="448.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0"
+                 prefWidth="29.0" style="-fx-background-color: #f0f5f5; -fx-cursor: hand;" AnchorPane.topAnchor="7.0">
+            <graphic>
+               <ImageView fitHeight="26.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../images/minimise2.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="333.0" prefWidth="526.0" style="-fx-background-color: #f0f5f5;"
+                  BorderPane.alignment="CENTER">
+         <Label alignment="CENTER" layoutY="14.0" prefHeight="27.0" prefWidth="526.0"
+                text="Information about your account:" textFill="#574d4d">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0"/>
+            </font>
+         </Label>
+         <Label layoutX="69.0" layoutY="55.0" prefHeight="25.0" prefWidth="87.0" text="FIrstname:" textFill="#574d4d"
+                AnchorPane.topAnchor="55.0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0"/>
+            </font>
+         </Label>
+         <Label layoutX="69.0" layoutY="89.0" prefHeight="25.0" prefWidth="87.0" text="Lastname:" textFill="#574d4d"
+                AnchorPane.topAnchor="95.0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0"/>
+            </font>
+         </Label>
+         <Label layoutX="69.0" layoutY="126.0" prefHeight="25.0" prefWidth="87.0" text="Username:" textFill="#574d4d"
+                AnchorPane.topAnchor="135.0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0"/>
+            </font>
+         </Label>
+         <Label layoutX="69.0" layoutY="162.0" prefHeight="25.0" prefWidth="87.0" text="Email:" textFill="#574d4d"
+                AnchorPane.topAnchor="175.0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0"/>
+            </font>
+         </Label>
+         <Label layoutX="69.0" layoutY="199.0" prefHeight="25.0" prefWidth="87.0" text="Birthdate:" textFill="#574d4d"
+                AnchorPane.topAnchor="215.0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0"/>
+            </font>
+         </Label>
+         <Label layoutX="69.0" layoutY="240.0" prefHeight="25.0" prefWidth="116.0" text="Phone number: "
+                textFill="#574d4d" AnchorPane.topAnchor="255.0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0"/>
+            </font>
+         </Label>
+         <Label fx:id="lb_firstname" layoutX="225.0" layoutY="59.0" prefHeight="25.0" prefWidth="162.0" text="l1"
+                textFill="#5212d3" AnchorPane.topAnchor="55.0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0"/>
+            </font>
+         </Label>
+         <Label fx:id="lb_lastname" layoutX="225.0" layoutY="95.0" prefHeight="25.0" prefWidth="162.0" text="l2"
+                textFill="#5212d3">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0"/>
+            </font>
+         </Label>
+         <Label fx:id="lb_username" layoutX="225.0" layoutY="135.0" prefHeight="25.0" prefWidth="162.0" text="l3"
+                textFill="#5212d3">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0"/>
+            </font>
+         </Label>
+         <Label fx:id="lb_email" layoutX="225.0" layoutY="175.0" prefHeight="25.0" prefWidth="162.0" text="l4"
+                textFill="#5212d3">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0"/>
+            </font>
+         </Label>
+         <Label fx:id="lb_birthdate" layoutX="225.0" layoutY="215.0" prefHeight="25.0" prefWidth="162.0" text="l5"
+                textFill="#5212d3">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0"/>
+            </font>
+         </Label>
+         <Label fx:id="lb_phoneNumber" layoutX="225.0" layoutY="255.0" prefHeight="25.0" prefWidth="162.0" text="l6"
+                textFill="#5212d3">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
